@@ -1,0 +1,16 @@
+{
+  "name": "offeringofpie-atom-syntax-theme",
+  "theme": "syntax",
+  "version": "0.0.0",
+  "description": "My own personal atom theme, with a 90's revivalism feel",
+  "keywords": [
+    "atom",
+    "syntax",
+    "theme"
+  ],
+  "repository": "https://github.com/offeringofpie/offeringofpie-atom-syntax-theme",
+  "license": "MIT",
+  "engines": {
+    "atom": ">=1.0.0 <2.0.0"
+  }
+}
