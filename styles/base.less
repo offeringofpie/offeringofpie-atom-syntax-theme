@@ -32,9 +32,9 @@ atom-text-editor {
     }
   }
 
+  .fold-marker::after,
   .gutter .line-number.folded,
-  .gutter .line-number:after,
-  .fold-marker:after {
+  .gutter .line-number::after {
     color: @light-gray;
   }
 
@@ -50,10 +50,7 @@ atom-text-editor {
     background-color: @syntax-selection-color;
   }
 }
-
-
 // Syntax styles
-
 .syntax--comment {
   color: @light-gray;
 }
@@ -70,7 +67,7 @@ atom-text-editor {
   }
 
   &.syntax--other.syntax--special-method {
-    color: @blue;
+    color: @cyan;
   }
 
   &.syntax--other.syntax--unit {
@@ -85,8 +82,13 @@ atom-text-editor {
 .syntax--constant {
   color: @orange;
 
+  & ~ .syntax--meta,
+  & ~ .syntax--separator {
+    color: darken(@orange, 5%);
+  }
+
   &.syntax--character.syntax--escape {
-    color: @cyan;
+    color: @purple;
   }
 
   &.syntax--numeric {
@@ -94,16 +96,20 @@ atom-text-editor {
   }
 
   &.syntax--other.syntax--color {
-    color: @cyan;
+    color: @purple;
   }
 
   &.syntax--other.syntax--symbol {
-    color: @green;
+    color: @light-orange;
   }
 }
 
 .syntax--variable {
   color: @red;
+
+  &.syntax--variable.syntax--definition.syntax--punctuation {
+    color: darken(@red, 5%);
+  }
 
   &.syntax--interpolation {
     color: darken(@red, 10%);
@@ -111,6 +117,10 @@ atom-text-editor {
 
   &.syntax--parameter.syntax--function {
     color: @syntax-text-color;
+
+    & ~ .syntax--bracket {
+      color: darken(@syntax-text-color, 5%);
+    }
   }
 }
 
@@ -120,11 +130,10 @@ atom-text-editor {
 }
 
 .syntax--string {
-  color: @green;
-
+  color: @light-orange;
 
   &.syntax--regexp {
-    color: @cyan;
+    color: @purple;
 
     .syntax--source.syntax--ruby.syntax--embedded {
       color: @orange;
@@ -142,16 +151,16 @@ atom-text-editor {
       color: @light-gray;
     }
 
-    &.syntax--string,
-    &.syntax--variable,
+    &.syntax--array,
     &.syntax--parameters,
-    &.syntax--array {
+    &.syntax--string,
+    &.syntax--variable {
       color: @syntax-text-color;
     }
 
     &.syntax--heading,
     &.syntax--identity {
-      color: @blue;
+      color: @cyan;
     }
 
     &.syntax--bold {
@@ -168,7 +177,6 @@ atom-text-editor {
   &.syntax--section.syntax--embedded {
     color: darken(@red, 10%);
   }
-
 }
 
 .syntax--support {
@@ -176,33 +184,36 @@ atom-text-editor {
     color: @light-orange;
   }
 
-  &.syntax--function  {
-    color: @cyan;
+  &.syntax--function {
+    color: @purple;
 
     &.syntax--any-method {
-      color: @blue;
+      color: @cyan;
     }
   }
 }
 
 .syntax--entity {
   &.syntax--name.syntax--function {
-    color: @blue;
+    color: @cyan;
   }
+
   &.syntax--name.syntax--type {
     color: @light-orange;
     text-decoration: underline;
   }
 
   &.syntax--other.syntax--inherited-class {
-    color: @green;
+    color: @light-orange;
   }
-  &.syntax--name.syntax--class, &.syntax--name.syntax--type.syntax--class {
+
+  &.syntax--name.syntax--class,
+  &.syntax--name.syntax--type.syntax--class {
     color: @light-orange;
   }
 
   &.syntax--name.syntax--section {
-    color: @blue;
+    color: @cyan;
   }
 
   &.syntax--name.syntax--tag {
@@ -214,9 +225,13 @@ atom-text-editor {
     color: @orange;
 
     &.syntax--id {
-      color: @blue;
+      color: @cyan;
     }
   }
+}
+
+.syntax--arguments .syntax--punctuation {
+  color: darken(@cyan, 5%);
 }
 
 .syntax--meta {
@@ -229,7 +244,7 @@ atom-text-editor {
   }
 
   &.syntax--require {
-    color: @blue;
+    color: @cyan;
   }
 
   &.syntax--selector {
@@ -266,11 +281,11 @@ atom-text-editor {
   }
 
   &.syntax--heading .syntax--punctuation.syntax--definition.syntax--heading {
-    color: @blue;
+    color: @cyan;
   }
 
   &.syntax--inserted {
-    color: @green;
+    color: @light-orange;
   }
 
   &.syntax--list {
@@ -282,20 +297,18 @@ atom-text-editor {
   }
 
   &.syntax--raw.syntax--inline {
-    color: @green;
+    color: @light-orange;
   }
 }
 
 .syntax--source.syntax--gfm .syntax--markup {
   -webkit-font-smoothing: auto;
+
   &.syntax--heading {
     color: @green;
   }
 }
-
-
 // Mini editor
-
 atom-text-editor[mini] .scroll-view {
   padding-left: 1px;
 }
