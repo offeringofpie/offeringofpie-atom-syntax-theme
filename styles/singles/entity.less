@@ -1,0 +1,36 @@
+.syntax--entity {
+  &.syntax--name.syntax--function {
+    color: @cyan;
+  }
+
+  &.syntax--name.syntax--type {
+    color: @light-orange;
+    text-decoration: underline;
+  }
+
+  &.syntax--other.syntax--inherited-class {
+    color: @light-orange;
+  }
+
+  &.syntax--name.syntax--class,
+  &.syntax--name.syntax--type.syntax--class {
+    color: @light-orange;
+  }
+
+  &.syntax--name.syntax--section {
+    color: @cyan;
+  }
+
+  &.syntax--name.syntax--tag {
+    color: @red;
+    text-decoration: underline;
+  }
+
+  &.syntax--other.syntax--attribute-name {
+    color: @orange;
+
+    &.syntax--id {
+      color: @cyan;
+    }
+  }
+}

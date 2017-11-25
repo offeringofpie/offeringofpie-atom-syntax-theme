@@ -1,0 +1,24 @@
+.syntax--constant {
+  color: @orange;
+
+  & ~ .syntax--meta,
+  & ~ .syntax--separator {
+    color: darken(@orange, 5%);
+  }
+
+  &.syntax--character.syntax--escape {
+    color: @purple;
+  }
+
+  &.syntax--numeric {
+    color: @orange;
+  }
+
+  &.syntax--other.syntax--color {
+    color: @purple;
+  }
+
+  &.syntax--other.syntax--symbol {
+    color: @light-orange;
+  }
+}

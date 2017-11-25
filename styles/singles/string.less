@@ -1,0 +1,15 @@
+.syntax--string {
+  color: @light-orange;
+
+  &.syntax--regexp {
+    color: @purple;
+
+    .syntax--source.syntax--ruby.syntax--embedded {
+      color: @orange;
+    }
+  }
+
+  &.syntax--other.syntax--link {
+    color: @red;
+  }
+}

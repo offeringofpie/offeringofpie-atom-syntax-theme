@@ -1,0 +1,21 @@
+.gutter {
+  background-color: @syntax-gutter-background-color;
+  color: @syntax-gutter-text-color;
+
+  .line-number {
+    &.cursor-line {
+      background-color: @syntax-gutter-background-color-selected;
+      color: @syntax-gutter-text-color-selected;
+    }
+
+    &.cursor-line-no-selection {
+      color: @syntax-gutter-text-color-selected;
+    }
+  }
+}
+
+.fold-marker::after,
+.gutter .line-number.folded,
+.gutter .line-number::after {
+  color: @light-gray;
+}

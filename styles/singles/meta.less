@@ -1,0 +1,48 @@
+.syntax--meta {
+  &.syntax--class {
+    color: @light-orange;
+  }
+
+  &.syntax--link {
+    color: @orange;
+  }
+
+  &.syntax--require {
+    color: @cyan;
+  }
+
+  &.syntax--selector {
+    color: @purple;
+  }
+
+  &.syntax--separator {
+    background-color: @gray;
+    color: @syntax-text-color;
+  }
+}
+
+.syntax--comment {
+  color: @light-gray;
+}
+
+.syntax--storage {
+  color: @purple;
+}
+
+.syntax--none {
+  color: @syntax-text-color;
+}
+
+.syntax--support {
+  &.syntax--class {
+    color: @light-orange;
+  }
+
+  &.syntax--function {
+    color: @purple;
+
+    &.syntax--any-method {
+      color: @cyan;
+    }
+  }
+}
