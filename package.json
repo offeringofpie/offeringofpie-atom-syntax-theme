@@ -2,6 +2,7 @@
   "name": "pie-syntax-theme",
   "theme": "syntax",
   "version": "0.3.2",
+  "main": "./lib/settings",
   "description": "My own personal atom theme, with a 80's revivalism feel",
   "keywords": [
     "atom",
