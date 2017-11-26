@@ -10,6 +10,6 @@ module.exports =
         'Light'
       ]
   activate: (state) ->
-    atom.config.onDidChange 'pie-syntax-theme.choice', () ->
+    atom.config.observe 'pie-syntax-theme.choice', () ->
       Update = require './updateColors'
       Update.apply()
