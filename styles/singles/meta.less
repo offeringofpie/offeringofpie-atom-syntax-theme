@@ -1,36 +1,36 @@
 .syntax--meta {
   &.syntax--brace {
-    color: darken(@orange, 5%);
+    color: darken(@color--orange, 5%);
   }
 
   &.syntax--class {
-    color: @light-orange;
+    color: @color--orange2;
   }
 
   &.syntax--link {
-    color: @orange;
+    color: @color--orange;
   }
 
   &.syntax--require {
-    color: @cyan;
+    color: @color--cyan;
   }
 
   &.syntax--selector {
-    color: @purple;
+    color: @color--purple;
   }
 
   &.syntax--separator {
-    background-color: @gray;
+    background-color: @foreground--3;
     color: @syntax-text-color;
   }
 }
 
 .syntax--comment {
-  color: @light-gray;
+  color: @syntax-comment-color;
 }
 
 .syntax--storage {
-  color: @purple;
+  color: @color--purple;
 }
 
 .syntax--none {
@@ -39,14 +39,14 @@
 
 .syntax--support {
   &.syntax--class {
-    color: @light-orange;
+    color: @color--orange2;
   }
 
   &.syntax--function {
-    color: @purple;
+    color: @color--purple;
 
     &.syntax--any-method {
-      color: @cyan;
+      color: @color--cyan;
     }
   }
 }

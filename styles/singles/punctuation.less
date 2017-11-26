@@ -1,7 +1,7 @@
 .syntax--punctuation {
   &.syntax--definition {
     &.syntax--comment {
-      color: @light-gray;
+      color: @syntax-comment-color;
     }
 
     &.syntax--array,
@@ -13,40 +13,40 @@
 
     &.syntax--heading,
     &.syntax--identity {
-      color: @cyan;
+      color: @color--cyan;
     }
 
     &.syntax--bold {
-      color: @light-orange;
+      color: @color--orange2;
       font-weight: bold;
     }
 
     &.syntax--italic {
-      color: @purple;
+      color: @color--purple;
       font-style: italic;
     }
   }
 
   &.syntax--section.syntax--embedded {
-    color: darken(@red, 10%);
+    color: darken(@color--red, 10%);
   }
 }
 
 .syntax--meta .syntax--punctuation.syntax--tag,
 .syntax--meta .syntax--punctuation.syntax--begin,
 .syntax--meta .syntax--punctuation.syntax--end {
-  color: darken(@red, 20%);
+  color: darken(@color--red, 20%);
 }
 
 .syntax--arguments .syntax--punctuation {
-  color: darken(@cyan, 5%);
+  color: darken(@color--cyan, 5%);
 }
 
 .syntax--string .syntax--string.syntax--punctuation {
-  color: darken(@light-orange, 10%);
+  color: darken(@color--orange2, 10%);
 }
 
 .syntax--function ~ .syntax--meta .syntax--bracket.syntax--punctuation,
 .syntax--function ~ .syntax--meta .syntax--variable ~ .syntax--bracket.syntax--punctuation {
-  color: darken(@blue, 10%);
+  color: darken(@color--blue, 10%);
 }

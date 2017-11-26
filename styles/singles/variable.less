@@ -1,16 +1,16 @@
 .syntax--variable {
-  color: @red;
+  color: @color--red;
 
   &.syntax--variable.syntax--definition.syntax--punctuation {
-    color: darken(@red, 5%);
+    color: darken(@color--red, 5%);
   }
 
   &.syntax--interpolation {
-    color: darken(@red, 10%);
+    color: darken(@color--red, 10%);
   }
 
   &.syntax--parameter.syntax--function {
-    color: @green;
+    color: @color--green;
 
     & ~ .syntax--bracket {
       color: darken(@syntax-text-color, 5%);

@@ -1,31 +1,43 @@
-@import "colors";
+// These colors are specific to the theme. Do not use in a package!
 
-// This defines all syntax variables that syntax themes must implement when they
-// include a syntax-variables.less file.
+@foreground--1: #c5c8c6;
+@foreground--2: #969896;
+@foreground--3: #373b41;
+@background--1: #282a2e;
+@background--2: rgba(15, 15, 15, 1);
+@background--3: rgba(0, 0, 0, 1);
+@color--cyan: rgba(0, 200, 200, 1);
+@color--blue: #1299ad;
+@color--purple: @color--blue;
+@color--green: rgba(120, 230, 150, 1);
+@color--red: #ef4e7c;
+@color--orange: #f37055;
+@color--orange2: #f79532;
 
 // General colors
-@syntax-text-color: @very-light-gray;
+@syntax-text-color: @foreground--1;
 @syntax-cursor-color: white;
-@syntax-selection-color: lighten(@dark-gray, 10%);
-@syntax-background-color: @very-dark-gray;
+@syntax-selection-color: lighten(@background--1, 10%);
+@syntax-background-color: @background--2;
+@syntax-comment-color: @foreground--2;
 
 // Guide colors
-@syntax-wrap-guide-color: @dark-gray;
-@syntax-indent-guide-color: @gray;
-@syntax-invisible-character-color: @gray;
+@syntax-wrap-guide-color: @background--1;
+@syntax-indent-guide-color: @foreground--3;
+@syntax-invisible-character-color: @foreground--3;
 
 // For find and replace markers
-@syntax-result-marker-color: @light-gray;
+@syntax-result-marker-color: @foreground--2;
 @syntax-result-marker-color-selected: white;
 
 // Gutter colors
-@syntax-gutter-text-color: @very-light-gray;
+@syntax-gutter-text-color: @foreground--1;
 @syntax-gutter-text-color-selected: @syntax-gutter-text-color;
-@syntax-gutter-background-color: @pitch-black;
-@syntax-gutter-background-color-selected: @gray;
+@syntax-gutter-background-color: @background--3;
+@syntax-gutter-background-color-selected: @foreground--3;
 
 // For git diff info. i.e. in the gutter
-@syntax-color-renamed: @blue;
-@syntax-color-added: @green;
-@syntax-color-modified: @orange;
-@syntax-color-removed: @red;
+@syntax-color-renamed: @color--blue;
+@syntax-color-added: @color--green;
+@syntax-color-modified: @color--orange;
+@syntax-color-removed: @color--red;
