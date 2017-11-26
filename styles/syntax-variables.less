@@ -1,11 +1,11 @@
 // These colors are specific to the theme. Do not use in a package!
 
-@foreground--1: #c5c8c6;
-@foreground--2: #969896;
-@foreground--3: #373b41;
-@background--1: #282a2e;
-@background--2: rgba(15, 15, 15, 1);
-@background--3: rgba(0, 0, 0, 1);
+@foreground--1: #282a2e;
+@foreground--2: rgba(15, 15, 15, 1);
+@foreground--3: rgba(0, 0, 0, 1);
+@background--1: #d5d8d6;
+@background--2: #969896;
+@background--3: #373b41;
 @color--cyan: rgba(0, 200, 200, 1);
 @color--blue: #1299ad;
 @color--purple: @color--blue;
@@ -17,12 +17,12 @@
 // General colors
 @syntax-text-color: @foreground--1;
 @syntax-cursor-color: white;
-@syntax-selection-color: lighten(@background--1, 10%);
-@syntax-background-color: @background--2;
-@syntax-comment-color: @foreground--2;
+@syntax-selection-color: @background--3;
+@syntax-background-color: @background--1;
+@syntax-comment-color: @background--2;
 
 // Guide colors
-@syntax-wrap-guide-color: @background--1;
+@syntax-wrap-guide-color: @background--2;
 @syntax-indent-guide-color: @foreground--3;
 @syntax-invisible-character-color: @foreground--3;
 
@@ -32,9 +32,9 @@
 
 // Gutter colors
 @syntax-gutter-text-color: @foreground--1;
-@syntax-gutter-text-color-selected: @syntax-gutter-text-color;
-@syntax-gutter-background-color: @background--3;
-@syntax-gutter-background-color-selected: @foreground--3;
+@syntax-gutter-text-color-selected: @background--1;
+@syntax-gutter-background-color: darken(@background--1, 2%);
+@syntax-gutter-background-color-selected: darken(@background--1, 30%);
 
 // For git diff info. i.e. in the gutter
 @syntax-color-renamed: @color--blue;
