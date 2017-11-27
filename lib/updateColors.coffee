@@ -13,7 +13,7 @@ module.exports =
       flavour_taste = fs.readFileSync flavour_file, "utf8"
       fs.writeFileSync syntax_variables, flavour_taste, "utf8"
       atom.config.set("pie-syntax-theme.choice",flavour)
-      atom.packages.getLoadedPackage("pie-syntax-theme").reloadStylesheets()
+      atom.packages.getActivePackages().filter((pack) -> pack.metadata.theme != 'undefined').forEach((pack) -> pack.reloadStylesheets())
 
     # When starting
     updateColor()
