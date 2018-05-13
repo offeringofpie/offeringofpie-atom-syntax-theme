@@ -1,19 +1,23 @@
 .syntax--keyword {
-  color: @color--blue;
+  color: @hue--2;
 
   &.syntax--control {
-    color: @color--blue;
+    color: @hue--2;
   }
 
-  &.syntax--operator {
+  &.syntax--accessor {
     color: @syntax-text-color;
+
+    & .syntax--module {
+      color: @hue--2;
+    }
   }
 
   &.syntax--other.syntax--special-method {
-    color: @color--cyan;
+    color: @hue--1;
   }
 
   &.syntax--other.syntax--unit {
-    color: @color--orange;
+    color: @hue--5;
   }
 }

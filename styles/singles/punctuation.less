@@ -13,40 +13,40 @@
 
     &.syntax--heading,
     &.syntax--identity {
-      color: @color--cyan;
+      color: @hue--1;
     }
 
     &.syntax--bold {
-      color: @color--orange;
+      color: @hue--5;
       font-weight: bold;
     }
 
     &.syntax--italic {
-      color: @color--blue;
+      color: @hue--2;
       font-style: italic;
     }
   }
 
   &.syntax--section.syntax--embedded {
-    color: darken(@color--red, 10%);
+    color: darken(@hue--4, 10%);
   }
 }
 
 .syntax--meta .syntax--punctuation.syntax--tag,
 .syntax--meta .syntax--punctuation.syntax--begin,
 .syntax--meta .syntax--punctuation.syntax--end {
-  color: darken(@color--red, 20%);
+  color: darken(@hue--4, 20%);
 }
 
 .syntax--arguments .syntax--punctuation {
-  color: darken(@color--cyan, 5%);
+  color: darken(@hue--1, 5%);
 }
 
 .syntax--string .syntax--string.syntax--punctuation {
-  color: darken(@color--orange, 10%);
+  color: darken(@hue--5, 10%);
 }
 
 .syntax--function ~ .syntax--meta .syntax--bracket.syntax--punctuation,
 .syntax--function ~ .syntax--meta .syntax--variable ~ .syntax--bracket.syntax--punctuation {
-  color: darken(@color--blue, 10%);
+  color: darken(@hue--2, 10%);
 }

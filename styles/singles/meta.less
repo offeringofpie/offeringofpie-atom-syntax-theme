@@ -1,22 +1,22 @@
 .syntax--meta {
   &.syntax--brace {
-    color: darken(@color--orange, 5%);
+    color: darken(@hue--5, 5%);
   }
 
   &.syntax--class {
-    color: @color--orange;
+    color: @hue--5;
   }
 
   &.syntax--link {
-    color: @color--orange;
+    color: @hue--5;
   }
 
   &.syntax--require {
-    color: @color--cyan;
+    color: @hue--1;
   }
 
   &.syntax--selector {
-    color: @color--blue;
+    color: @hue--2;
   }
 
   &.syntax--separator {
@@ -30,7 +30,7 @@
 }
 
 .syntax--storage {
-  color: @color--blue;
+  color: @hue--2;
 }
 
 .syntax--none {
@@ -39,14 +39,15 @@
 
 .syntax--support {
   &.syntax--class {
-    color: @color--orange;
+    color: @hue--5;
   }
 
-  &.syntax--function {
-    color: @color--blue;
+  &.syntax--function,
+  &.syntax--constant {
+    color: @hue--2;
+  }
 
-    &.syntax--any-method {
-      color: @color--cyan;
-    }
+  &.syntax--any-method {
+    color: @hue--1;
   }
 }
