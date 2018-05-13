@@ -1,3 +1,10 @@
-.DS_Store
-npm-debug.log
-node_modules
+/*
+!.gitignore
+!package.json
+!index.less
+!LICENSE
+!package.json
+!readme.md
+!styles
+!lib
+!images
