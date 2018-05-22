@@ -25,6 +25,7 @@
       "default": "Dark",
       "enum": [
         "Dark",
+        "Dark-cold",
         "Light"
       ]
     }
