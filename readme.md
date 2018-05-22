@@ -22,15 +22,15 @@ Or through the Install section in the Settings panel.
 # 🎨 Available Themes
 <details>
   <summary>Dark</summary>
-  ![Dark screenshot](https://raw.githubusercontent.com/offeringofpie/pie-syntax-theme/master/images/dark.png "Dark syntax theme")
+  <img src="https://raw.githubusercontent.com/offeringofpie/pie-syntax-theme/master/images/dark.png" alt="Dark syntax theme" />
 </details>
 <details>
   <summary>Dark Cold</summary>
-  ![Dark cold screenshot](https://raw.githubusercontent.com/offeringofpie/pie-syntax-theme/master/images/dark-cold.png "Dark cold syntax theme")
+  <img src="https://raw.githubusercontent.com/offeringofpie/pie-syntax-theme/master/images/dark-cold.png" alt="Dark cold syntax theme" />
 </details>
 <details>
   <summary>Light</summary>
-  ![Light screenshot](https://raw.githubusercontent.com/offeringofpie/pie-syntax-theme/master/images/light.png "Light syntax theme")
+  <img src="https://raw.githubusercontent.com/offeringofpie/pie-syntax-theme/master/images/light.png" alt="Light syntax theme" />
 </details>
 
 # UI theme
